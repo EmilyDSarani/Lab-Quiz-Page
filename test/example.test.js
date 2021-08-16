@@ -1,6 +1,7 @@
 // IMPORT MODULES under test here:
 
-import { yessir } from './utils.js';
+import { yessir } from '../utils.js';
+
 const test = QUnit.test;
 
 test('time to test a function', (expect) => {
