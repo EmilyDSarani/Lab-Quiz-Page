@@ -9,3 +9,27 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+HTML:
+Will Need a button and some <div> and <span>
+Need to write out the information
+assign classes and IDS
+add an image or two
+
+CSS:
+Circle back to this, but essentially will nee to make it look pretty
+decorate the button, use hover and transition, just make it fun
+
+Javascript:
+Evenlisteners
+
+Add code in the button click handle function:
+
+Ask the user's name. Their name should be used in subsequent prompts
+Confirm that the user really wants to take the quiz. If not, return from your event listener function.
+Three YES/NO questions (using prompt calls) about the subject. Use your countsAsAYes function to determine the user's response, then compare to the correct answer. Track number of correct responses.
+Alert the user that the quiz is complete and their results will now be written to the webpage.
+Write a response to the page with their name and number correct, for example: "Okay Bernice, you got 2/3 correct".
+STRETCH goal(s):
+Add a class to style the result differently based on good or bad score.
+Add different text content ('Great work!' 'Needs improvement!', etc) based on user's results
+Include a percentage, without decimal places.
