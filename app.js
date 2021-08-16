@@ -28,6 +28,6 @@ button.addEventListener('click', () => {
 
     if (correctAnswers < 3){
         results.textContent = `Here you go, young ${identity} you scored ${correctAnswers} out of 3 correct. Consider trying out for quidditch instead.`;
-    } else {results.textContent=`Here you go, young ${identity} you scored ${correctAnswers} out of 3 correct. You might be the brightest of your generation.`;}
+    } else {results.textContent = `Here you go, young ${identity} you scored ${correctAnswers} out of 3 correct. You might be the brightest of your generation.`;}
 
 });
