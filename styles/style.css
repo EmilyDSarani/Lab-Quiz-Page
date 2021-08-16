@@ -1,11 +1,11 @@
 
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    --color1: rgb(238, 241, 10);
-    --color2: rgb(4, 51, 22);
-    --color3: rgb(151, 5, 5);
-    --color4: rgb(223, 210, 41);
-    --color5: rgb(16, 39, 90); 
+    --color1: rgba(0, 0, 0, 0.945);
+    --color2: rgb(156, 156, 156);
+    --color3: rgb(255, 255, 255);
+    --color4: rgb(255, 255, 250);
+    --color5: rgb(1, 77, 30); 
 
     /* --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
