@@ -71,7 +71,8 @@ h2 {
 }
 
 .main-logo {
-    animation: pulse 5s infinite ease-in-out;
+    border: 5px;
+    box-shadow: var(--shadow);
 }
 
 header img {
