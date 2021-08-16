@@ -26,6 +26,8 @@ button.addEventListener('click', () => {
     const duckie3 = prompt ('Duck Races have been held in the U.S., Australia, and the U.K.')
     if (yessir(duckie3)) correctAnswers++;
 
+    
+
     alert(`This is the end of the quiz. Thank you, ${pronouns} ${firstName} ${lastName}. Hold your hippogriffs, your results will appear shortly.`);
     results.textContent = `Here you go, young ${identity} you scored ${correctAnswers} out of 3 correct. Consider trying out for quidditch after this.`;
 });
