@@ -1,0 +1,35 @@
+
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    
+    --header-height: 80px;
+    --gutter: 30px;
+    --footer-height: 25px;
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--color2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--footer-height));
+}
+
+header {
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+}
+
+header img {
+    height: var(--header-height);
+}
+  
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+}
