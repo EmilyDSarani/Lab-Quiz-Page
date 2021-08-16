@@ -1,29 +1,31 @@
-// import functions and grab DOM elements
+
 const button = document.getElementById ('quiz');
 const results = document.getElementById('results');
-import { countsAsAYes } from './utils.js';
+import { yessir } from './utils.js';
 
 // initialize state
 
 // set event listeners 
 button.addEventListener('click', () => {
     let correctAnswers = 0;
-    const firstName = prompt('Cheerio! What is your preferred first name?');
-    const lastName = prompt('What is your last name?');
-    const identity =prompt ('Do you prefer Witch or Wizard?')
+
+    const firstName = prompt('Merlin\'s Beard! We can\'t start the quiz without knowing your preferred name!');
+    const lastName = prompt('Very good, now what is your last name?');
+    const identity = prompt ('Do you prefer Witch or Wizard?');
+    const pronouns = prompt('Do you prefer Mr, Miss, or Mx?');
  
-    const wantsToContinue = confirm(`Very good young ${identity}! ${firstName} ${lastName}, would you like to test your skills?`);
+    const wantsToContinue = confirm(`Very good young ${identity}! Now then ${pronouns} ${firstName} ${lastName}, would you like to test your skills?`);
     if (!wantsToContinue) return;
 
-    const duckie1 = prompt('Did Rubber Ducks help with children/s fear of water?');
-    if (countsAsAYes(duckie1)) correctAnswers++;
+    const duckie1 = prompt('Did Rubber Ducks help with children\'s fear of water?');
+    if (yessir(duckie1)) correctAnswers++;
 
-    const duckie2 = prompt('Hofman/s Duck Project was created in 2017.');
-    if (!countsAsAYes(duckie2)) correctAnswers++;
+    const duckie2 = prompt('Hofman\'s Duck Project was created in 2017.');
+    if (!yessir(duckie2)) correctAnswers++;
 
-    const duckie3 =prompt ('Duck Races have been held in the U.S., Australia, and the U.K.')
-    if (countAsAYes(duckie3)) correctAnswers++;
+    const duckie3 = prompt ('Duck Races have been held in the U.S., Australia, and the U.K.')
+    if (yessir(duckie3)) correctAnswers++;
 
-    alert(`This is the end of the quiz. Thank you, ${firstName} ${lastName}. Hold your hippogriffs, your results will appear shortly.`);
+    alert(`This is the end of the quiz. Thank you, ${pronouns} ${firstName} ${lastName}. Hold your hippogriffs, your results will appear shortly.`);
     results.textContent = `Here you go, young ${identity} you scored ${correctAnswers} out of 3 correct. Consider trying out for quidditch after this.`;
 });

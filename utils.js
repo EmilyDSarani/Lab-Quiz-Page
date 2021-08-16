@@ -1,3 +1,3 @@
-export function countsAsAYes(someString) {
-    return someString.charAt(0).toLowerCase() === 'y';
+export function yessir(correct) {
+    return correct.charAt(0).toLowerCase() === 'y';
 }
