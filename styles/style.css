@@ -112,3 +112,10 @@ footer {
     }
 
   }
+ .quiz{
+     background-color: hsl(46, 81%, 50%);
+     color:black;
+     border-radius: 10px;
+     cursor:pointer;
+     box-shadow: burlywood;
+ }
