@@ -122,8 +122,23 @@ footer {
   }
  .quiz{
      background-color: hsl(46, 81%, 50%);
-     color:black;
+     color:black 100px;
      border-radius: 10px;
      cursor:pointer;
      box-shadow: burlywood;
+     transition: all .2s ease-in-out;
+}
+
+.quiz:hover{
+transform: scale(1.4);
+}
+ 
+ 
+ /*.wrong{
+     color:blue;
+     display:none;
  }
+ .right{
+     color:red;
+     display:none;
+ } *\

@@ -1,4 +1,3 @@
-// IMPORT MODULES under test here:
 
 import { yessir } from '../utils.js';
 

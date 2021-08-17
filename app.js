@@ -1,6 +1,7 @@
 
 const button = document.getElementById ('quiz');
 const results = document.getElementById('results');
+
 import { yessir } from './utils.js';
 
 
@@ -27,7 +28,7 @@ button.addEventListener('click', () => {
     alert(`This is the end of the quiz. Thank you, ${pronouns} ${firstName} ${lastName}. Hold your hippogriffs, your results will appear shortly.`);
 
     if (correctAnswers < 3){
-        results.textContent = `Here you go, young ${identity} you scored ${correctAnswers} out of 3 correct. Consider trying out for quidditch instead.`;
-    } else {results.textContent = `Here you go, young ${identity} you scored ${correctAnswers} out of 3 correct. You might be the brightest of your generation.`;}
+        results.textContent = `Here you go, young ${identity} you scored ${correctAnswers} out of 3 correct. You should try out for Quidditch instead.`;
+    } else {results.textContent = `Here you go, young ${identity} you scored ${correctAnswers} out of 3 correct. You could be the brightest of your generation.`;}
 
 });
