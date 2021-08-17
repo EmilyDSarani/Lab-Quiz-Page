@@ -9,9 +9,13 @@ button.addEventListener('click', () => {
     let correctAnswers = 0;
 
     const firstName = prompt('Merlin\'s Beard! We can\'t start the quiz without knowing your preferred name!');
+    if (!firstName) return;
     const lastName = prompt('Very good, now what is your last name?');
+    if (!lastName) return;
     const identity = prompt ('Do you prefer Witch or Wizard?');
+    if (!identity) return;
     const pronouns = prompt('Do you prefer Mr, Miss, or Mx?');
+    if (!pronouns) return;
  
     const wantsToContinue = confirm(`Very good young ${identity}! Now then ${pronouns} ${firstName} ${lastName}, would you like to test your skills?`);
     if (!wantsToContinue) return;
